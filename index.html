@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <h1 id="title" ><title id="title">Mohato Hospital Survey </title>Mohato Hospital Survey</h1>
+
+    <p class="description" id="description">Please take some time to help us improve the environment for your next visit</p>
+<div class="container">
+ <form id="survey-form" >
+   <div>
+   <label id="name-label">Name</label>
+   <input id="name" type="text" required placeholder="Enter your Name" />
+    </div>
+    <div>
+   <label id="surname-label">Surname</label>
+   <input id="surname" required placeholder="Enter your Surname"/>
+   </div>
+    <div>
+   <label id="email-label">Email</label>
+   <input id="email" type="email"  required placeholder="Enter your Email"/>
+   </div>
+    <div>
+   <label id="number-label">Age</label>
+   <input id="number" type="number" min="16" max="120" placeholder="Age"/>
+   </div>
+
+   <div class="one">
+     <label>Which option would you best describe your experience</label>
+   <select id="dropdown" required>
+     <option value="" disabled selected >Experience</option>
+
+     <option value="poor">Poor</option>
+     <option value="fair">Fair</option>
+     <option value="moderate">Moderate</option>
+     <option value="good">Good</option>
+     <option value="Excellent">Excellent</option>
+     </select>
+  </div>
+
+ <div class="one">
+   <label class="inline">Would you reccomend Mohato Hospital to friends and family?</lable>
+  <label><input value="yes"  class="inline" name="recommend" type="radio"/>Yes</label>
+  <label><input value="no" class="inline" name="recommend" type="radio"/>No</label>
+ </div>
+
+ <div class="one">
+<label class="inline">How was the food service during your visit?</label>
+  <label><input value="satisfying" class="inline" name="food-serve" type="radio"/>Satisfying</label>
+  <label><input value="unsatisfying" class="inline" name="food-serve" type="radio"/>Unsatisfying</label>
+ </div>
+
+ <div class="one">
+   <label>What would you like to see us improve? (check all that apply) </label>
+  <label><input class="inline" value="Doctor" type="checkbox"/>Receiving a clear answer of a question from a doctor</label>
+  <label><input class="inline" value="nurse" type="checkbox"/>Receiving a clear answer of a question from a nurse</label>
+  <label><input class="inline" value="post/op" type="checkbox"/>Receiving a clear answer about post/OP</label>
+  <label><input class="inline" value="family-member" type="checkbox"/>Having enough opportunity to talk to a doctor by family member</label>
+  <label><input class="inline" value="worries" type="checkbox"/>Discussing/comfort patients worries/fears by healthcare staff</label>
+  <label><input class="inline" value="condition" type="checkbox"/>Any privacy when discussing condition/treatment/procedure</label>
+  <label><input class="inline" value="control-pain" type="checkbox"/>Doing everything to control pain by hospital staff</label>
+  <label><input class="inline" value="medic-intake" type="checkbox"/>Telling how to take your medication</label>
+  <label><input class="inline" value="side-effect" type="checkbox"/>Telling about medication side effect by hospital staff</label>
+  <label><input class="inline" value="dignity" type="checkbox"/>Being treated with respect and dignity in hospital</label>
+ </div>
+
+ <div class="one">
+<label class="inline">Please leave a comment or suggestions below</label>
+<textarea placeholder="Enter your comment here..."></textarea>
+</div>
+
+<div>
+  <input id="submit" type="submit"/>
+</div>
+
+</form>
+</div>
+  </body>
+</html>
